@@ -1,0 +1,26 @@
+{
+  "name": "plex-poster-optimizer",
+  "version": "1.0.0",
+  "author": "Nic Jansma",
+  "license": "MIT",
+  "description": "Ensures all Plex Posters are high quality",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.6.1",
+    "chalk": "^2.4.1",
+    "image-size": "^0.8.3",
+    "plex-api": "https://github.com/nicjansma/node-plex-api.git",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-nicjansma": "^1.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nicjansma/mymovies2plex.git"
+  },
+  "bugs": {
+    "url": "http://github.com/nicjansma/mymovies2plex/issues"
+  }
+}
