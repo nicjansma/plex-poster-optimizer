@@ -1,0 +1,22 @@
+{
+    "extends": "nicjansma",
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "ecmaFeatures": {
+            "impliedStrict": true
+        }
+    },
+    "rules": {
+        //
+        // Disabled
+        //
+        "no-console": 0,
+        "no-process-exit": 0,
+        "guard-for-in": 0,
+        "no-loop-func": 0
+    }
+}

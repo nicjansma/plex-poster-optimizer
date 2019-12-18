@@ -1,0 +1,4 @@
+/node_modules
+*.cmd
+*.xml
+series.json
