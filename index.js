@@ -8,6 +8,7 @@ const yargs = require("yargs");
 const imgSize = require("image-size");
 const url = require("url");
 const http = require("http");
+const https = require("https");
 
 //
 // Command-line args
@@ -296,13 +297,13 @@ async.waterfall([
                         return cbEachOtherPoster();
                     });
                 } else {
-                    // let posterUrl =
-                    //     decodeURIComponent(otherPoster.key.substr(otherPoster.key.indexOf("url=") + 4));
                     let posterUrl = otherPoster.key;
+                    let posterUri = url.parse(posterUrl);
+                    let fetchClient = posterUri.protocol === "https:" ? https : http;
 
                     console.log(`\t\t${posterUrl}`);
 
-                    http.get(url.parse(posterUrl), function(response) {
+                    fetchClient.get(posterUri, function(response) {
                         let chunks = [];
 
                         response.on("data", function(chunk) {
