@@ -62,6 +62,6 @@ node index.js ... --pretend
 
 ## Version History
 
-* 1.0.2 (2020-06-19) - Fixed a runtime error if no posters are avaialable
+* 1.0.2 (2020-06-19) - Fixed a runtime error if no posters are available
 * 1.0.1 (2019-12-22) - Fixed to work with HTTPS poster URLs
 * 1.0.0 (2019-12-19) - Initial version
