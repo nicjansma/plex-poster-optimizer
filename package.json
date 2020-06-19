@@ -1,6 +1,6 @@
 {
   "name": "plex-poster-optimizer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Nic Jansma",
   "license": "MIT",
   "description": "Ensures all Plex Posters are high quality",

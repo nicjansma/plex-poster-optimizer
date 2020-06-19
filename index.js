@@ -247,7 +247,7 @@ async.waterfall([
         console.log(`Finding better ${postersToUpdate.length} posters!`);
 
         async.eachSeries(postersToUpdate, function(poster, cbEachPoster) {
-            let otherPosters = poster.posters.filter(function(filteredPoster) {
+            let otherPosters = (poster.posters || []).filter(function(filteredPoster) {
                 if (Array.isArray(provider)) {
                     return provider.indexOf(filteredPoster.provider) !== -1 &&
                         filteredPoster.key.indexOf("metadata") === -1;

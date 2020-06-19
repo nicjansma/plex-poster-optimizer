@@ -1,4 +1,4 @@
-# plex-poster-optimizer v1.0.1
+# plex-poster-optimizer v1.0.2
 
 Ensures Plex Posters are high-quality, e.g. above a minimum height/width threshold.
 
@@ -62,5 +62,6 @@ node index.js ... --pretend
 
 ## Version History
 
+* 1.0.2 (2020-06-19) - Fixed a runtime error if no posters are avaialable
 * 1.0.1 (2019-12-22) - Fixed to work with HTTPS poster URLs
 * 1.0.0 (2019-12-19) - Initial version
